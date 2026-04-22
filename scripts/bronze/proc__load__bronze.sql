@@ -30,10 +30,10 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 SELECT CONCAT('Rows Loaded: ', ROW_COUNT()) AS message;
 
-SELECT 'Truncating CRM Customers...' AS message;
+SELECT 'Truncating CRM products...' AS message;
 TRUNCATE TABLE bronze.crm_prd_info;
 
-SELECT 'Loading CRM Customers...' AS message;
+SELECT 'Loading CRM products...' AS message;
 LOAD DATA LOCAL INFILE 'C:/Users/Atharva Sutar/OneDrive/Desktop/data warehouse/sql-data-warehouse-project/datasets/source_crm/prd_info.csv'
 INTO TABLE bronze.crm_prd_info
 FIELDS TERMINATED BY ','
@@ -41,10 +41,11 @@ OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 SELECT CONCAT('Rows Loaded: ', ROW_COUNT()) AS message;
-SELECT 'Truncating CRM Customers...' AS message;
+
+SELECT 'Truncating CRM Sales details.' AS message;
 TRUNCATE TABLE bronze.crm_sales_details;
 
-SELECT 'Loading CRM Customers...' AS message;
+SELECT 'Loading CRM Sales deatils...' AS message;
 LOAD DATA LOCAL INFILE 'C:/Users/Atharva Sutar/OneDrive/Desktop/data warehouse/sql-data-warehouse-project/datasets/source_crm/sales_details.csv'
 INTO TABLE bronze.crm_sales_details
 FIELDS TERMINATED BY ','
@@ -65,10 +66,10 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 SELECT CONCAT('Rows Loaded: ', ROW_COUNT()) AS message;
 
-SELECT 'Truncating ERP Customers...' AS message;
+SELECT 'Truncating ERP location...' AS message;
 TRUNCATE TABLE bronze.erp_loc_a101;
 
-SELECT 'Loading ERP Customers...' AS message;
+SELECT 'Loading ERP location...' AS message;
 LOAD DATA LOCAL INFILE 'C:/Users/Atharva Sutar/OneDrive/Desktop/data warehouse/sql-data-warehouse-project/datasets/source_erp/LOC_A101.csv'
 INTO TABLE bronze.erp_loc_a101
 FIELDS TERMINATED BY ','
@@ -77,10 +78,10 @@ LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 SELECT CONCAT('Rows Loaded: ', ROW_COUNT()) AS message;
 
-SELECT 'Truncating ERP Customers...' AS message;
+SELECT 'Truncating ERP Categories ...' AS message;
 TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 
-SELECT 'Loading ERP Customers...' AS message;
+SELECT 'Loading ERP Categories...' AS message;
 LOAD DATA LOCAL INFILE 'C:/Users/Atharva Sutar/OneDrive/Desktop/data warehouse/sql-data-warehouse-project/datasets/source_erp/PX_CAT_G1V2.csv'
 INTO TABLE bronze.erp_px_cat_g1v2
 FIELDS TERMINATED BY ','
