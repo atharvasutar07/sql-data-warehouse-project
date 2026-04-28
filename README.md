@@ -97,6 +97,3 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 ## About Me
 
 I'm Atharva Sutar, a BSc Computer Science student and aspiring Data Engineer, passionate about building data-driven solutions and sharing knowledge in an engaging way.
-
-## 👤 About Me
- I'm **Atharva Sutar**, a BSc Computer Science student and aspiring Data Engineer, passionate about building data-driven solutions and sharing knowledge in an engaging way.
